@@ -11,7 +11,7 @@ from Produkcja import *
 class Admin(Uzytkownicy,Maszyny,Formy,Butelki,Tworzywa,Opakowanie,Gwint,Produkcja):
 
     def __init__(self):
-        self.conn = pymysql.connect('localhost', 'root', 'Karol1234', 'butelczarki', charset='utf8')
+        self.conn = pymysql.connect('localhost', '******', '******', 'butelczarki', charset='utf8')
         self.c = self.conn.cursor()
         print("------------Połączenie ustanowione----------------")
 
